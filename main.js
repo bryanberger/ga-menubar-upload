@@ -1,18 +1,20 @@
 const {app, Menu, Tray} = require('electron')
 const path = require('path'),
-      dotenv = require('dotenv').config();
       request = require('request'),
       os = require('os'),
       fs = require('fs'),
-      endpoint = process.env.ENDPOINT,
-      token = process.env.TOKEN,
+      env = require('./env.json');
+      endpoint = env.ENDPOINT,
+      token = env.TOKEN,
       extensions = ['.png', '.jpg', '.jpeg', '.gif']
 
 let tray = null
 let username = os.userInfo().username
 
+app.dock.hide()
+
 app.on('ready', () => {
-  tray = new Tray('assets/icon.png')
+  tray = new Tray(__dirname + '/assets/icon.png')
   const contextMenu = Menu.buildFromTemplate([
     {label: 'Quit', click () { app.quit() }},
   ])

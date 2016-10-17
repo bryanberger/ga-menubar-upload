@@ -4,14 +4,17 @@
   "description": "drag and drop images/screenshots to the menubar to upload to the Product Dashboard TV",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . ga-menubar-upload --prune --asar --overwrite --platform=darwin --arch=x64 --out=build --icon=./assets/icon.icns --ignore=.git --ignore=build"
   },
   "author": "Bryan Berger",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^1.4.3"
+    "electron": "^1.4.3",
+    "electron-packager": "^8.1.0"
   },
   "dependencies": {
-    "dotenv": "^2.0.0"
+    "dotenv": "^2.0.0",
+    "request": "^2.75.0"
   }
 }
