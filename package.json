@@ -1,0 +1,17 @@
+{
+  "name": "ga-menubar-upload",
+  "version": "1.0.0",
+  "description": "drag and drop images/screenshots to the menubar to upload to the Product Dashboard TV",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Bryan Berger",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0"
+  }
+}
