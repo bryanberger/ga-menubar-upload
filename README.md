@@ -4,5 +4,10 @@
 #### Meant to work with
 - [ga-sketch-upload](https://github.com/bryanberger/ga-sketch-upload)
 
-#### Built with Electron
-- [electron.atom.io](http://electron.atom.io)
+#### Setup env.json Config file
+```
+{
+  "TOKEN": "<TOKEN HERE>",
+  "ENDPOINT": "<ENDPOINT URL HERE>"
+}
+```
