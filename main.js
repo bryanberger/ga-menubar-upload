@@ -14,7 +14,7 @@ let username = os.userInfo().username
 app.dock.hide()
 
 app.on('ready', () => {
-  tray = new Tray(__dirname + '/assets/icon.png')
+  tray = new Tray(__dirname + '/assets/icon_Template.png')
   const contextMenu = Menu.buildFromTemplate([
     {label: 'Quit', click () { app.quit() }},
   ])
