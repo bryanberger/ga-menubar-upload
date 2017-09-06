@@ -6,7 +6,7 @@ const path = require('path'),
       env = require('./env.json');
       endpoint = env.ENDPOINT,
       token = env.TOKEN,
-      extensions = ['.png', '.jpg', '.jpeg', '.gif']
+      extensions = ['.png', '.jpg', '.jpeg', '.gif', '.mp4', '.mov']
 
 let tray = null
 let username = os.userInfo().username
